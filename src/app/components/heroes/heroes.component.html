@@ -1,0 +1,20 @@
+<ul class="list-unstyled">
+  <li *ngFor="let hero of heroes">
+    <div class="col-sm-9 col-md-6 col-lg-5 mb-2 bg-secondary text-light p-3">
+      <div class="row text-center">
+        <div class="col-1 align-self-center">
+          <span
+            class="text-dark font-weight-bolder border border-dark rounded p-1"
+            >{{hero.id}}</span
+          >
+        </div>
+        <div class="col-8 align-self-center">
+          <strong>{{hero.name}}</strong>
+        </div>
+        <div class="col-3 align-self-center">
+          <button class="btn btn-outline-dark" type="reset">Delete</button>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
